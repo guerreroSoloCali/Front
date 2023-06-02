@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aplicación de Tareas</title>
+  <link rel="stylesheet" href="styles/index.css"> <!-- Conectar la página con CSS -->
+  
+
+</head>
+<body>
+  <h1>Aplicacion de Tareas</h1>
+  
+  <form id="taskForm">
+    <input type="text" id="titleInput" placeholder="Titulo de la tarea" required>
+    <textarea id="descriptionInput" placeholder="Descripcion de la tarea" required></textarea>
+    <button type="submit">Crear tarea</button>
+  </form>
+  
+  <div id="taskBoard">
+    <h2>To Do</h2>
+    <ul id="todoList"></ul>
+
+    <h2>Doing</h2>
+    <ul id="doingList"></ul>
+
+    <h2>Done</h2>
+    <ul id="doneList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
